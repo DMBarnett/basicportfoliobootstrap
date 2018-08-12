@@ -6,29 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>David Barnett</title>
     <link rel="stylesheet" type="text/css" href"https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!--<link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
     <link rel="stylesheet" type="text/css" href="assets/css/myStyle.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand">
+    <nav class="navbar navbar-expand-md topHeader">
+        <a class="navbar-brand nameHeader">
             <h1 class="navbarHeader">David Mitchell Barnett</h1>
         </a>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav" style="float:right">
-                <li class="nav-item rightButtons" id="firstLink">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation" style="color:black">
+                <span class="navbar-toggler-icon"><img id="buttonImage" src="assets/images/Hamburger_icon.svg.png"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">
                         <h3>About</h3>
                     </a>
                 </li>
-                <li class="nav-item rightButtons">
+                <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">
                         <h3>Portfolio</h3>
                     </a>
                 </li>
-                <li class="nav-item rightButtons">
+                <li class="nav-item">
                     <a class="nav-link" href="contact.html">
                         <h3>Contact</h3>
                     </a>
@@ -41,26 +45,41 @@
     <br>
     <br>
     <br>
-    <div class="contentBox">
+    <div class="container contentBox">
         <div id="bodyText">
-            <div id="aboutMe">
-                <h1>About Me</h1>
+            <div class="row">
+                <div class="col-12" id="aboutMe">
+                    <h1>About Me</h1>
+                </div>
             </div>
-            <hr>
-            <div>
-                <div>
+            <div class="row"><div class="col-12"><hr></div></div>
+            <div class="row">
+                <div class="col-12 col-lg-3 col-md-4">
                     <img class="aboutText" id="portrait" src="assets/images/portrait.JPG" alt="A great picture of me!">
                 </div>
-                <div>
+                <div class="col-lg-9 col-md-8 col-sm-12 col-3">
                     <p class="aboutText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-3">
                     <p class="aboutText">We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defense, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.</p>
+            
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-3">
                     <p class="aboutText">Representatives and direct Taxes shall be apportioned among the several States which may be included within this Union, according to their respective Numbers, which shall be determined by adding to the whole Number of free Persons, including those bound to Service for a Term of Years, and excluding Indians not taxed, three fifths of all other Persons. The actual Enumeration shall be made within three Years after the first Meeting of the Congress of the United States, and within every subsequent Term of ten Years, in such Manner as they shall by Law direct. The Number of Representatives shall not exceed one for every thirty Thousand, but each State shall have at Least one Representative; and until such enumeration shall be made, the State of New Hampshire shall be entitled to chuse three, Massachusetts eight, Rhode-Island and Providence Plantations one, Connecticut five, New-York six, New Jersey four, Pennsylvania eight, Delaware one, Maryland six, Virginia ten, North Carolina five, South Carolina five, and Georgia three.</p>
                 </div>   
             </div>
         </div>
     </div>
-    <div class="footer">
-        <p class="footerText">Copyright 2018 &copy;</p>
+    <div class="container mw-100 footer">
+        <div class="row">
+            <div class="col-12">
+                <p class="footerText">Copyright 2018 &copy;</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
